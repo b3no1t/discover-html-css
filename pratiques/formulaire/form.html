@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Formulaire</title>
+ <!-- 
+ <link rel="stylesheet" href="./assets/css/style.css">
+ -->
+</head>
+
+<body>
+ <div class="wrapper">
+  <div class="container">
+
+   <nav class="navigation">
+    <ul>
+     <li><a href="./table.html">table</a></li>
+     <li><a href="./form.html">form</a></li>
+     <li><a href="./exemple.html">exemple</a></li>
+     <li><a href="./font.html">Police de caractere </a></li>
+     <li><a href="./position.html">Position </a></li>
+    </ul>
+   </nav>
+
+   <h1>Formulaires</h1>
+   <p>
+    <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/form">Documentation FORMS</a>
+   </p>
+
+   <h2 style="margin: 16px 0 16px 0; background: sandybrown; padding: 32px; color: white">Les input</h2>
+
+
+
+
+
+   
+   <form class="my-form" action="/form/validation.php">
+    <!-- ouverture de formulaire -->
+
+    <label for="corvette"> case à cocher
+     <input type="checkbox" name="corvette">
+    </label>
+    <!-- case à cocher -->
+    <input type="checkbox" name="bmw"> <!-- case à cocher -->
+    <input type="checkbox" name="fiat"> <!-- case à cocher -->
+    <hr> <!-- separateur ligne-->
+
+
+
+    <p>boutton radio</p>
+
+    <label>
+     fromage
+     <input type="radio" value="fromage" name="carteresto">
+    </label>
+
+    <label> chocolat
+     <input type="radio" value="chocolat" name="carteresto">
+    </label>
+    <label> sushi
+     <input type="radio" value="chocolat2" name="carteresto">
+    </label>
+    <hr>
+
+
+    <!-- affiche un calendrier -->
+    <p>Date:</p>
+    <input type="date" name="date">
+    <hr>
+
+    <!-- champs texte email -->
+    <label for="email"> email
+     <input 
+      type="email" 
+      name="email" 
+      value=""
+      placeholder="ecrire "
+      >
+    </label>
+    <hr>
+
+    <!-- champs texte month (mois) -->
+    <input type="month" name="" id="">
+    <hr>
+    <!-- champs texte GSM -->
+
+    <input type="tel" name="gsm" id="">
+    <hr>
+
+
+
+    <!-- champs color (couleur) -->
+
+    <label for="color"> Couleur:
+     <input type="color" name="color" />
+    </label>
+    <hr>
+
+
+    <!-- champs calendrier + Horraire -->
+
+    <label for="color"> date et Heure:
+     <input type="datetime-local" name="agenda" />
+    </label>
+    <hr>
+
+    <!-- champs Upload (télécharger vers le site) -->
+    <label for="file"> Upload:
+     <input type="file" accept="image/*, text/*" name="file" />
+    </label>
+    <hr>
+    <!-- champs caché -->
+    <label for="hidden"> HIDDEN:
+     <input id="userId" name="userId" type="hidden" value="abc123">
+    </label>
+    <hr>
+    <!-- Bouton image -->
+    <label for="image"> Bouton Image:
+     <input type="image" id="image" alt="Login" src="" />
+    </label>
+    <hr>
+    <!-- champs Numéro  -->
+    <label for="number"> Number:
+     <input type="number" name="number" />
+    </label>
+    <hr>
+    <!-- champs texte mot de passe -->
+    <label for="pass">Password (8 characters minimum):</label>
+    <input type="password" id="pass" name="password" minlength="8" required />
+    <hr>
+    <!-- champs Range -->
+    <label for="cowbell">Range</label>
+    <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
+    <hr>
+
+
+    <!-- champs menu select -->
+    <select name="menur" id="">
+     <option value="color">red</option>
+     <option value="color">yellow</option>
+     <option value="color">violet</option>
+     <option value="color">Primaire</option>
+    </select>
+
+
+    <br> <!-- breaking line, saut de ligne-->
+    <textarea name="message" id="" cols="30" rows="4"></textarea>
+
+    <input type="text" value="ceux ci est un champs texte"> <br>
+
+    <input type="button" value="SEND">
+
+   </form>
+  </div>
+ </div>
+</body>
+
+</html>

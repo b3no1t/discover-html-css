@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de contact</title>
+  </head>
+  <body>
+    <form>
+      <!--
+       un champs nom
+       un champs email
+       un champs commentaire
+       le bouton envoyer
+      -->
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="your name"
+        size="10"
+        required
+      />
+      <br /><br />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="votre email"
+        required
+      />
+      <br /><br />
+      <label for="number"
+        >Number
+        <input type="number" name="number" id="number" step="2" />
+        <br /><br />
+        <fieldset>
+          <legend>Choisissez votre fruits</legend>
+
+          <label for="banane">banane</label>
+          <input type="radio" name="fruits" id="banane" />
+          <br />
+          <label for="poire">poire</label>
+          <input type="radio" name="fruits" id="poire" />
+          <br />
+        </fieldset>
+
+        <fieldset>
+          <legend>La légende du fieldset</legend>
+
+          <label for="pigment">Charcoal</label>
+          <input type="checkbox" name="pigment" id="charcoal" />
+
+          <label for="pigment">Curcuma</label>
+          <input type="checkbox" name="pigment" id="curcuma" />
+        </fieldset>
+
+        <select name="pays" id="pays">
+         <option value="espagne">Espagne</option>
+         <option value="royaume-uni">Royaume-Uni</option> 
+         <option value="canada">Canada</option>
+         <option value="japon">Japon</option> 
+        </select>
+      <textarea rows="10" cols="24"> </textarea>
+      <br />
+      <input type="submit" value="SEND" />
+    </form>
+  </body>
+</html>
